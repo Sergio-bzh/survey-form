@@ -1,11 +1,34 @@
+/* Test style-html are linked */
 body {
   background-color: burlywood;
 }
 
-input {
+/* Stylisation begining from here */
+.mandatory {
+  border: 3px solid brown;
+  margin: 5px 0;
+}
+
+.choices {
+  border: 2px solid blue;
+}
+
+.block {
   display: block;
 }
 
-input:invalid {
-  border: 3px solid red;
+.pets {
+  margin: 8px 0;
+}
+
+
+
+textarea {
+  margin-top: 15px;
+}
+
+
+.button {
+  display: inline;
+  margin: 10px 0;
 }

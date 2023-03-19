@@ -8,21 +8,67 @@
   <title>Build a Survey Form</title>
 </head>
 <body>
-  <h1 id="title">Titre de la page</h1>
-  <p id="description">Courte explication du projet ou de l'App</p>
-  <form id="survey-form" action="">
-    <section class="firstSection">
-      <label for="fullName"> Name and Surname (in lowercase)</label>
-      <input name="fullName" id="fullName" type="text" placeholder="e.g. john smith" pattern="[a-z]{1-80}" title="Must be lowercase" required>
-      <!-- <label for="firstName"> First name (small letters)</label>
-      <input name="firstName" id="firstName" type="text" placeholder="e.g. john" pattern="[a-z' '-]{1-40}" required>
-      <label for="surname"> Familly name (CAPITAL letters)</label>
-      <input name="surname" id="surname" type="text" placeholder="e.g. smith" pattern="[A-Z]' '-{1-40}" required>
-      <label for="email"> Fill with a valid e-mail address</label>
-      <input name="email" id="email" type="email" placeholder="e.g. john.smith@thematrix.com" required> -->
-    </section>
-    <input type="submit" value="Envoyer">
-  </form>
-  
+  <main>
+    <h1 id="title">First contact form</h1>
+    <p id="description">Courte explication du projet ou de l'Application</p>
+    <form id="survey-form" action="">
+      <section class="mandatory">
+        <label for="name" id="name-label"> Enter your name </label>
+        <input class="block" name="name" id="name" type="text" placeholder="e.g. John">
+        <label for="email"> Fill with a valid e-mail address</label>
+        <input class="block" name="email" id="email" type="email" placeholder="john.smith@thematrix.com">
+      </section>
+      <section class="choices">
+        <label for="dropdown">Loved season</label>
+        <select class="block" name="season" id="dropdown">
+          <option value="">Select one</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="fall">Automn</option>
+          <option value="winter">Winter</option>
+        </select>
+        <div class="pets">
+          <span>Choose your prefered pet</span>
+          <div>
+            <label for="pet"><input name="pet" id="cats" type="radio"> Cats</label>
+          </div>
+          <div>
+            <label for="pet"><input name="pet" id="dogs" type="radio"> Dogs</label>
+          </div>  
+        </div>
+        <div>
+          <p>Select your prefered activities</p>
+          <ul>
+            <li>
+              <input name="theater" id="theater" type="checkbox" value="theater"><label for="theater"> Theater</label>
+            </li>
+            <li>
+              <input name="museums" id="museums" type="checkbox" value="museums"><label for="museums"> Museum</label>
+            </li>
+            <li>
+              <input name="cinema" id="cinema" type="checkbox" value="cinema"><label for="cinema"> Cinema</label>
+            </li>
+            <li>
+              <input name="opera" id="opera" type="checkbox" value="opera"><label for="opera"> Opera</label>
+            </li>
+            <li>
+              <input name="videoGames" id="videoGames" type="checkbox" value="videoGames"><label for="videoGames"> Video Games</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <label for="number"> Please enter a number from 1 to 99</label>
+      <div>
+        <input class="" id="number" type="number" min="1" max="99" placeholder="e.g. 10">
+      </div>
+      <textarea name="userPresentation" id="aboutUser" cols="30" rows="10" placeholder="Tell us about you"></textarea>
+      <div>
+        <input class="button" type="submit" value="Envoyer">
+        <button class="button" type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
