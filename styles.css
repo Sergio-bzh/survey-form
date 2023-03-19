@@ -1,0 +1,11 @@
+body {
+  background-color: burlywood;
+}
+
+input {
+  display: block;
+}
+
+input:invalid {
+  border: 3px solid red;
+}
